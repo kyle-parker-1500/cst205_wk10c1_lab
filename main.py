@@ -1,9 +1,11 @@
 # run with: flask --app hello_flask --debug run 
 # Link to github: https://github.com/kyle-parker-1500/cst205_wk10c1_lab
 
+# imports
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 
+# creating objects
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
