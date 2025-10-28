@@ -4,6 +4,7 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
+bootstrap = Bootstrap5(app)
 
 # task 2 at root
 @app.route('/')
@@ -16,7 +17,6 @@ def t_test():
    return render_template('test_template.html')
 
 # task 4
-@app.route('/some-bootstrap')
+@app.route('/bootstrap')
 def boostrap():
     return render_template('test_bootstrap.html')
-
