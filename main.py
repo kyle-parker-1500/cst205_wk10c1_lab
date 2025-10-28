@@ -15,4 +15,8 @@ def hello():
 def t_test():
    return render_template('test_template.html')
 
+# task 4
+@app.route('/some-bootstrap')
+def boostrap():
+    return render_template('test_bootstrap.html')
 
